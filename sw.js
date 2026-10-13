@@ -3,10 +3,10 @@
  * - 必要ファイル一式の取得に成功したときだけ install が完了する（途中で通信が切れたら旧版のまま）。
  * - skipWaiting は自動で呼ばない。スタッフが「更新して再起動」を押したときだけメッセージで有効化する。
  */
-const BUILD_ID = '911c1472a6a5';
+const BUILD_ID = '48f2d2244053';
 const PREFIX = 'akari-v2-shell-';
 const CACHE = PREFIX + BUILD_ID;
-const PRECACHE = ["./","assets/index-BTrLV1kf.js","assets/index-U30bQ-Ov.css","fonts/MochiyPopOne-jp.woff2","fonts/MochiyPopOne-latin.woff2","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","img/art/banzai.png","img/art/guide.png","img/art/salute.png","img/prizes/magnet.jpg","img/prizes/marker.png","img/prizes/pin.png","img/prizes/stand.png","index.html","manifest.webmanifest","build-info.json","precache.json"];
+const PRECACHE = ["./","assets/index-U30bQ-Ov.css","assets/index-u9fRObOW.js","audio/jackpot.mp3","audio/spin.mp3","fonts/MochiyPopOne-jp.woff2","fonts/MochiyPopOne-latin.woff2","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","img/art/banzai.png","img/art/guide.png","img/art/salute.png","img/prizes/magnet.jpg","img/prizes/marker.png","img/prizes/pin.png","img/prizes/stand.png","index.html","manifest.webmanifest","build-info.json","precache.json"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
